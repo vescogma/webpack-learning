@@ -1,0 +1,19 @@
+// fix up the cleaning and add webpack http plugin
+
+{
+  "name": "03-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist && cp ./src/index.html ./dist",
+    "build": "npm run clean && webpack",
+    "start": "http-server ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "webpack": "^2.2.0"
+  }
+}

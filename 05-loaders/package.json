@@ -1,0 +1,18 @@
+{
+  "name": "03-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "npm run clean && webpack",
+    "start": "http-server ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^2.26.0",
+    "http-server": "^0.9.0",
+    "webpack": "^2.2.0"
+  }
+}
